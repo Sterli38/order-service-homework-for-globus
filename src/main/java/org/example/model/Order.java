@@ -1,9 +1,8 @@
-package org.example;
+package org.example.model;
 
 import java.util.List;
 
 public class Order {
-
     private String id;
     private String customerType; // "REGULAR", "VIP", "PREMIUM"
     private String paymentType;  // "CARD", "CASH", "TRANSFER"
@@ -18,9 +17,23 @@ public class Order {
         this.amount = amount;
     }
 
-    public String getId() { return id; }
-    public String getCustomerType() { return customerType; }
-    public String getPaymentType() { return paymentType; }
-    public List<String> getItems() { return items; }
-    public double getAmount() { return amount; }
+    public String getId() {
+        return id;
+    }
+
+    public String getCustomerType() {
+        return customerType;
+    }
+
+    public String getPaymentType() {
+        return paymentType;
+    }
+
+    public List<String> getItems() {
+        return items;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
 }
